@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frontend Developer Test</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="position-relative">
+  <!-- <header class="w-100 h-auto top-0 sticky-top">
+    <nav class="navbar navbar-expand-lg bg-transparent mb-lg-0">
+      <div class="container">
+        <a class="navbar-brand" href="#">DINESHGAHLOT.COM</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent"
+          style="display: flex !important;">
+          <ul class="navbar-nav me-0 mb-2 mb-lg-0">
+            <li class="nav-item p-2">
+              <a class="nav-link active" aria-current="page" href="#">HOME</a>
+            </li>
+            <li class="nav-item p-2 dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                PORTFOLIO
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">WEB DEVELOPER</a></li>
+                <li><a class="dropdown-item" href="#">WEB DESIGNER</a></li>
+                 <li><hr class="dropdown-divider" /></li> 
+                <li>
+                  <a class="dropdown-item" href="#">FRONTEND DEVELOPER</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item p-2">
+              <a class="nav-link" href="#">ABOUT</a>
+            </li>
+            <li class="nav-item p-2">
+              <a class="nav-link" href="#">TESTIMONIAL</a>
+            </li>
+            <li class="nav-item p-2">
+              <a class="nav-link" href="#">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header> -->
+  <header class="sticky-top">
+    <div class="d-flex align-items-center justify-content-between container">
+      <div>
+        <a class="navbar-brand" href="#">DINESHGAHLOT.COM</a>
+      </div>
+      <div class="desktop-menu">
+        <ul class="d-flex gap-3">
+          <li><a href="#"> HOME</a></li>
+          <li><a href="#"> PORTFOLIO</a></li>
+          <li><a href="#"> ABOUT</a></li>
+          <li><a href="#"> TESTIMONIAL</a></li>
+          <li><a href="#"> CONTACT</a></li>
+        </ul>
+      </div>
+      <div id="myLinks">
+        <a href="#HOME">HOME</a>
+        <a href="#PORTFOLIO">PORTFOLIO</a>
+        <a href="#ABOUT">ABOUT</a>
+        <a href="#TESTIMONIAL">TESTIMONIAL</a>
+        <a href="#CONTACT">CONTACT</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </header>
+  <!-- banner slider -->
+  <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel" style="top: -50px;">
+    <div class="position-absolute w-75 banner-content" style="z-index: 9; top: 30%; left: 10%">
+      <h2 class="text-white mb-50 banner-content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+        quae repudianda
+      </h2>
+      <div class="d-flex pr-8 align-items-center justify-content-between flex-direction-mobile
+      ">
+        <button class="bg-black text-white px-4 py-2 border-0">
+          read more
+        </button>
+        <p class="text-white banner-right-text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+      </div>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://picsum.photos/1200/401" class="d-block w-100" alt="banner-slide-1" />
+      </div>
+      <div class="carousel-item">
+        <img src="https://picsum.photos/1200/402" class="d-block w-100" alt="banner-slide-2" />
+      </div>
+      <div class="carousel-item">
+        <img src="https://picsum.photos/1200/403" class="d-block w-100" alt="banner-slide-3" />
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- grid section -->
+  <div class="grid-cols-3 container align-items-center justify-content-between gap-4 my-12">
+    <div>
+      <div class="mb-4">
+        <img src="./img/left.jpg" alt="gallery-1" style="width: 100%" />
+      </div>
+      <div>
+        <img src="./img/01.avif" alt="gallery-2" style="width: 100%" />
+      </div>
+    </div>
+    <div>
+      <div class="mb-4">
+        <img src="./img/03.avif" alt="gallery-3" style="width: 100%" />
+      </div>
+      <div>
+        <img src="./img/left.jpg" alt="gallery-4" style="width: 100%" />
+      </div>
+    </div>
+    <div>
+      <div class="mb-4">
+        <img src="./img/left.jpg" alt="gallery-5" style="width: 100%" />
+      </div>
+      <div>
+        <img src="./img/03.avif" alt="gallery-6" style="width: 100%" />
+      </div>
+    </div>
+  </div>
+
+  <!-- testimonial section -->
+  <div class="d-flex grid-cols-2 container align-items-center mb-50 flex-direction-mobile">
+    <div>
+      <h3 class="mb-25">Testimonial</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+        veniam! Possimus consectetur veritatis rem totam saepe accusantium
+        vel, beatae incidunt.
+      </p>
+    </div>
+    <div class="w-100">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://picsum.photos/1200/607" class="d-block w-100" alt="testimonial-slide-1" />
+          </div>
+          <div class="carousel-item">
+            <img src="https://picsum.photos/1200/608" class="d-block w-100" alt="testimonial-slide-2" />
+          </div>
+          <div class="carousel-item">
+            <img src="https://picsum.photos/1200/609" class="d-block w-100" alt="testimonial-slide-3" />
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- background image section -->
+  <div class="background-img d-flex align-items-center justify-content-center">
+    <h2 class="text-white text-center lh-base">
+      Do it Your way. <br />
+      Elope in Your <br />Dream Location
+    </h2>
+  </div>
+
+  <!-- text section -->
+  <div class="container m-auto text-center pt-10 pb-10">
+    <h4 class="text-center mb-4">Pacific Northwest or Anywhere Beyound</h4>
+    <p class="text-center w-75 m-auto mb-50">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit mollitia
+      officiis quae ullam adipisci architecto quasi dolore exercitationem
+      dolorem, cumque et temporibus quibusdam reiciendis consequatur vero
+      excepturi voluptate ad quia fugit doloremque natus cupiditate
+      perspiciatis qui. Quia neque laboriosam ipsam.
+    </p>
+    <button class="bg-black text-white px-4 py-2 border-0 mt-25">
+      Button
+    </button>
+  </div>
+
+  <!-- Item slider-->
+  <div class="container-fluid">
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12">
+        <div class="carousel carousel-showmanymoveone slide" id="itemslider">
+          <div class="carousel-inner">
+
+            <div class="item active">
+              <div class="col-xs-12 col-sm-3 col-md-4">
+                <a href="#"><img
+                    src="https://images.unsplash.com/photo-1539840093138-9b3e230e5206?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=765a2eb222b1851840a4a157780fb487&auto=format&fit=crop&w=1534&q=80"
+                    class="img-responsive center-block"></a>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="col-xs-12 col-sm-3 col-md-4">
+                <a href="#"><img
+                    src="https://images.unsplash.com/photo-1524010349062-860def6649c3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e725946a3f177dce83a705d4b12019c2&auto=format&fit=crop&w=500&q=60"
+                    class="img-responsive center-block"></a>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="col-xs-12 col-sm-3 col-md-4">
+                <a href="#"><img
+                    src="https://images.unsplash.com/photo-1511556820780-d912e42b4980?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=04aebe9a22884efa1a5f61e434215597&auto=format&fit=crop&w=500&q=60"
+                    class="img-responsive center-block"></a>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="col-xs-12 col-sm-3 col-md-4">
+                <a href="#"><img
+                    src="https://images.unsplash.com/photo-1531925470851-1b5896b67dcd?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=91fe0ca1b5d72338a8aac04935b52148&auto=format&fit=crop&w=500&q=60"
+                    class="img-responsive center-block"></a>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="col-xs-12 col-sm-3 col-md-4">
+                <a href="#"><img
+                    src="https://images.unsplash.com/photo-1516961642265-531546e84af2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=74065eec3c2f6a8284bbe30402432f1d&auto=format&fit=crop&w=500&q=60"
+                    class="img-responsive center-block"></a>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="col-xs-12 col-sm-3 col-md-4">
+                <a href="#"><img
+                    src="https://images.unsplash.com/photo-1532086853747-99450c17fa2e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=61a42a11f627b0d21d0df757d9b8fe23&auto=format&fit=crop&w=500&q=60"
+                    class="img-responsive center-block"></a>
+              </div>
+            </div>
+
+          </div>
+
+          <div id="slider-control">
+            <a class="left carousel-control" href="#itemslider" data-slide="prev"><img
+                src="https://cdn0.iconfinder.com/data/icons/website-kit-2/512/icon_402-512.png" alt="Left"
+                class="img-responsive"></a>
+            <a class="right carousel-control" href="#itemslider" data-slide="next"><img
+                src="http://pixsector.com/cache/81183b13/avcc910c4ee5888b858fe.png" alt="Right"
+                class="img-responsive"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Item slider end-->
+
+  <!-- quote section -->
+  <div class="container pt-10">
+    <p class="text-center fst-italic">"Do not follow where the path may lead. </br> Go instead where there is no path
+      and leave
+      a <br>trail."</p>
+    <h6 class="text-center mt-25 fs-7 text"><b>RALPH WALDO EMERSON</b></h6>
+  </div>
+
+  <!-- welcome friend section -->
+  <div class="container d-flex pt-10 pb-10 align-items-center welcome-section">
+    <div class="text-center col-md-6 col-sm-12 col-xs-12 nature-mobile-view">
+      <img src="./img/left.jpg" alt="welcome-friend" style="width: 300px; height: 400px;">
+    </div>
+    <div class=" col-md-6 col-sm-12 col-xs-12">
+      <h6 class="mt-25 fs-7 text">BEHIND THE CAMERA LENS</h6>
+      <h1 class="text-capitalize mn-4 py-4">welcome friend,<br> my name is <br>venesa </h1>
+      <p class="w-75 pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eum cumque asperiores
+        earum eius tempora
+        non soluta quam esse quod dolore sit facilis, nesciunt quasi nam, consectetur iure autem est voluptatem adipisci
+        sint illum repudiandae sequi? Molestias nemo distinctio architecto?</p>
+      <button class="bg-black text-white px-4 py-2 border-0 text-capitalize">
+        learn more
+      </button>
+    </div>
+  </div>
+
+
+  <!-- last section -->
+  <div class="background-img2 d-flex flex-column align-items-center justify-content-center">
+    <h2 class="text-white text-center lh-base text-capitalize">
+      are you ready for <br />
+      your adventure?
+    </h2>
+    <button class="bg-black text-white mt-4 px-4 py-2 border-0">
+      Learn more
+    </button>
+    <p class="text-white text-center pt-10">Lorem ipsum dolor sit amet.</p>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+
+  <script>
+    $(document).ready(function () {
+
+      $('#itemslider').carousel({ interval: 3000 });
+
+      $('.carousel-showmanymoveone .item').each(function () {
+        var itemToClone = $(this);
+
+        for (var i = 1; i < 3; i++) {
+          itemToClone = itemToClone.next();
+
+          if (!itemToClone.length) {
+            itemToClone = $(this).siblings(':first');
+          }
+
+          itemToClone.children(':first-child').clone()
+            .addClass("cloneditem-" + (i))
+            .appendTo($(this));
+        }
+      });
+    });
+  </script>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
